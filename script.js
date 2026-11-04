@@ -1,6 +1,6 @@
 /*
   TOKENS USED IN THIS FILE:
-  233246699008 - WhatsApp fallback link in the form error message
+  233241892746 - WhatsApp fallback link in the form error message
   (The Formspree endpoint is NOT repeated here; it is read from form.action in index.html.)
 */
 (function () {
@@ -12,7 +12,7 @@
   var status = document.getElementById("form-status");
   var btn = form.querySelector('button[type="submit"]');
   var label = btn.textContent;
-  var WA = "https://wa.me/233246699008?text=Hello%20TradeBase%2C%20I%27d%20like%20to%20know%20more";
+  var WA = "https://wa.me/233241892746?text=Hello%20TradeBase%2C%20I%27d%20like%20to%20know%20more";
 
   function show(type, html) {
     status.className = "status " + type;

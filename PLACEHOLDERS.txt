@@ -1,7 +1,7 @@
 TradeBase - configuration tokens
 ====================================================================
 
-WhatsApp number is set: 233246699008 (0246699008)
+WhatsApp number is set: 233241892746 (0241892746)
 Contact email is set: example@trade.com
 Formspree is configured: xwllyvwz (contact.html form action)
 Site URL is configured: https://tbase.netlify.app
