@@ -1,0 +1,14 @@
+TradeBase - placeholder tokens to find-and-replace before going live
+====================================================================
+
+WhatsApp number is set: 233246699008 (0246699008)
+Contact email is set: example@trade.com
+Formspree is configured: xwllyvwz (contact.html form action)
+
+{{SITE_URL}}         Live site URL, no trailing slash (e.g. https://tradebase.example)
+  - index.html   : canonical, og:url, JSON-LD Organization url
+  - contact.html : canonical, og:url
+  - robots.txt   : Sitemap line
+  - sitemap.xml  : <loc> (both pages)
+
+netlify.toml uses no tokens.
