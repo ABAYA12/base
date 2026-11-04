@@ -2,6 +2,7 @@
 # none (this file uses no placeholder tokens; the CSP allows https://formspree.io)
 
 [build]
+  command = "echo 'Static site, no build required'"
   publish = "."
 
 [[headers]]
