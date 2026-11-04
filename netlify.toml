@@ -2,8 +2,8 @@
 # none (this file uses no placeholder tokens; the CSP allows https://formspree.io)
 
 [build]
-  command = "echo 'Static site, no build required'"
-  publish = "."
+  command = "mkdir -p dist && cp -r index.html contact.html style.css script.js favicon.ico robots.txt sitemap.xml dist/"
+  publish = "dist"
 
 [[headers]]
   for = "/*"
