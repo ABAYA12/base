@@ -1,25 +1,28 @@
-# tradebase
+# TradeBase
 
-create this now: 
-do no waste time generating any image that will waste credits so do nto egenarte any AI iamge or that
+Simple, lightweight, framework-free static marketing website for TradeBase — WhatsApp record-keeping for informal traders in Ghana.
 
-This project was built with [Lovable](https://lovable.dev).
+## Structure
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/dd01bfa4-c870-43fd-abf1-46f293c73967).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- `index.html` — Homepage and marketing landing page
+- `contact.html` — Contact and inquiry page
+- `style.css` — Stylesheet
+- `script.js` — Vanilla JavaScript (form submission & interactions)
+- `netlify.toml` — Netlify configuration with security and cache headers
+- `robots.txt` & `sitemap.xml` — SEO indexing files
+- `PLACEHOLDERS.txt` — Notes on configuration tokens (e.g. `{{SITE_URL}}`)
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+No build tools, bundlers, or Node.js dependencies are required. You can preview the site using any static web server:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+# Using Python
+python -m http.server 8000
+
+# Or open index.html directly in any browser
 ```
+
+## Deployment
+
+The site is configured for zero-build deployment on Netlify via `netlify.toml` (`publish = "."`).
