@@ -9,6 +9,7 @@ Static marketing and contact website for **TradeBase** — WhatsApp-based sales 
 ├── contact.html   # Contact page (Formspree inquiry form and WhatsApp/email links)
 ├── style.css      # Shared layout and component styles
 ├── script.js      # Footer year update and async contact form handling
+├── images/        # Social preview image (og-image.png)
 ├── netlify.toml   # Netlify publish config, cache rules, and security headers
 ├── robots.txt     # Search engine crawler rules
 ├── sitemap.xml    # XML sitemap for search indexing
@@ -18,7 +19,7 @@ Static marketing and contact website for **TradeBase** — WhatsApp-based sales 
 ## Configuration
 
 ### Changing the WhatsApp Number
-Find and replace `233241892746` with your full international phone number (country code + number, digits only, no `+` or spaces) in:
+Find and replace `233XXXXXXXXX` with your full international phone number (country code + number, digits only, no `+` or spaces) in:
 1. `index.html` (header button, hero button, floating button)
 2. `contact.html` (header button, contact card button, floating button)
 3. `script.js` (`WA` fallback URL variable)
