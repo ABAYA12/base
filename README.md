@@ -9,6 +9,7 @@ Static marketing and contact website for **TradeBase** — WhatsApp-based sales 
 ├── contact.html   # Contact page (Formspree inquiry form and WhatsApp/email links)
 ├── style.css      # Shared layout and component styles
 ├── script.js      # Footer year update and async contact form handling
+├── netlify.toml   # Netlify publish config, cache rules, and security headers
 ├── robots.txt     # Search engine crawler rules
 ├── sitemap.xml    # XML sitemap for search indexing
 └── README.md      # Project documentation

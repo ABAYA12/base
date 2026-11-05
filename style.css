@@ -1,41 +1,53 @@
-/* Shared layout and component styles */
+/* Variables */
+:root{--green:#0B5D3B;--green-dark:#083D28;--gold:#F5B301;--bg:#FAF8F3;--white:#FFFFFF;--ink:#14231B;--muted:#5B6B62;--wa:#25D366;--green-light:#E4F0E8;--radius:12px;--radius-card:16px;--pad-section:56px;--gap:20px;--max:1080px;--shadow:0 4px 18px rgba(20,35,27,.08)}
+
+/* Layout */
 .section{padding:var(--pad-section) 0}
 .section-alt{background:var(--white)}
 .section h2{font-size:1.75rem;color:var(--green-dark)}
 .narrow{max-width:760px}
 .grid{display:grid;gap:var(--gap);list-style:none;padding:0;margin:24px 0 0}
+.assoc{background:var(--green-light)}
+.assoc p{margin:0 0 24px}
+.contact-grid{display:grid;gap:var(--gap)}
+#contact-section{padding-bottom:calc(var(--pad-section) + 40px)}
+.site-footer{background:var(--green-dark);color:#DCE8E0;padding:40px 0 calc(96px + env(safe-area-inset-bottom))}
+.site-footer p{margin:0 0 6px}
+.brand-foot{font-weight:800;font-size:1.25rem;color:var(--white)}
+
+/* Buttons */
+form .btn{margin-top:20px;width:100%}
+form .btn:disabled{opacity:.7;cursor:wait;transform:none}
+.wa-card .btn{margin:16px 0}
+
+/* Cards */
 .card{background:var(--white);border-radius:var(--radius-card);box-shadow:var(--shadow);padding:22px}
 .section-alt .card{background:var(--bg)}
 .section .card h2,.card h3{font-size:1.15rem;color:var(--ink)}
 .card p{margin:0;color:var(--muted)}
 .num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:800;font-size:1.2rem;margin-bottom:12px}
 .icon{width:44px;height:44px;padding:9px;border-radius:12px;background:var(--green-light);fill:none;stroke:var(--green);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
-.assoc{background:var(--green-light)}
-.assoc p{margin:0 0 24px}
 details{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:12px}
 summary{cursor:pointer;font-weight:700;padding:14px 20px;min-height:48px;display:flex;align-items:center;list-style:none}
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";margin-left:auto;font-size:1.4rem;color:var(--green)}
 details[open] summary::after{content:"\2212"}
 details p{margin:0;padding:0 20px 16px;color:var(--muted)}
-.contact-grid{display:grid;gap:var(--gap)}
+
+/* Forms */
 form label{display:block;font-weight:600;margin:14px 0 6px}
 form label:first-of-type{margin-top:0}
 input,textarea{width:100%;font:inherit;font-size:17px;padding:12px 14px;min-height:48px;border:1.5px solid #9AA9A0;border-radius:10px;background:var(--white);color:var(--ink)}
 input:focus,textarea:focus{border-color:var(--green);outline:3px solid var(--gold);outline-offset:1px}
-form .btn{margin-top:20px;width:100%}
-form .btn:disabled{opacity:.7;cursor:wait;transform:none}
 .status{margin-top:14px;font-weight:600}
 .status:empty{display:none}
 .status.ok{color:#0B5D3B;background:#E4F0E8;padding:12px;border-radius:10px}
 .status.err{color:#9B1C1C;background:#FDECEC;padding:12px;border-radius:10px}
-.wa-card .btn{margin:16px 0}
 .email a{word-break:break-all}
-.site-footer{background:var(--green-dark);color:#DCE8E0;padding:40px 0 calc(96px + env(safe-area-inset-bottom))}
-.site-footer p{margin:0 0 6px}
-.brand-foot{font-weight:800;font-size:1.25rem;color:var(--white)}
+
+/* Floating button */
 .wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,0,0,.25);z-index:60;transition:transform .15s}
 .wa-float:hover{transform:scale(1.06)}
-#contact-section{padding-bottom:calc(var(--pad-section) + 40px)}
+
 @media (min-width:640px){.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(2,1fr)}form .btn{width:auto}}
-@media (min-width:768px){.section h2{font-size:2.1rem}.contact-grid{grid-template-columns:1.6fr 1fr;align-items:start}.grid-4{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:768px){:root{--pad-section:96px}.section h2{font-size:2.1rem}.contact-grid{grid-template-columns:1.6fr 1fr;align-items:start}.grid-4{grid-template-columns:repeat(4,1fr)}}
