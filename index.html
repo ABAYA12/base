@@ -21,6 +21,7 @@
 <meta name="twitter:description" content="Keep simple records by sending a WhatsApp message. Build a financial profile lenders can trust.">
 <meta name="twitter:image" content="https://tbase.netlify.app/images/og-image.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B5D3B'/%3E%3Cpath d='M9 8h14v16H9z' fill='%23FAF8F3'/%3E%3Cpath d='M12 13h8M12 17h8M12 21h5' stroke='%230B5D3B' stroke-width='2'/%3E%3Ccircle cx='23' cy='23' r='5' fill='%23F5B301'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="images/hero-800.webp" type="image/webp" imagesrcset="images/hero-480.webp 480w, images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"TradeBase","url":"https://tbase.netlify.app","description":"WhatsApp-based record-keeping that helps informal traders in Ghana build a financial profile through their trade associations.","address":{"@type":"PostalAddress","addressLocality":"Accra","addressCountry":"GH"}}
 </script>
@@ -49,8 +50,11 @@ a{color:var(--green)}
 .nav-links a{display:inline-flex;align-items:center;min-height:48px;padding:0 10px;color:#DCE8E0;text-decoration:none;font-weight:600}
 .nav-links a[aria-current="page"]{color:var(--white);box-shadow:inset 0 -3px 0 var(--gold)}
 @media (max-width:480px){.site-header .btn-sm{display:none}}
-.hero{background:var(--green-dark);color:var(--white);padding:var(--pad-section) 0}
-.hero .wrap{display:grid;gap:40px}
+.hero{position:relative;overflow:hidden;background:var(--green-dark);color:var(--white);padding:var(--pad-section) 0}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(8,61,40,.78);z-index:1}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-img{width:100%;height:100%;object-fit:cover;object-position:center 38%;display:block}
+.hero .wrap{position:relative;z-index:2;display:grid;gap:40px}
 .hero h1{font-size:2rem}
 .hero p{color:#DCE8E0;margin:0 0 24px}
 .hero .btn-outline{border-color:var(--white);color:var(--white)}
@@ -91,6 +95,10 @@ a{color:var(--green)}
 <main id="main">
   <!-- Hero section -->
   <section class="hero" aria-labelledby="hero-title">
+    <picture class="hero-media">
+      <source type="image/webp" srcset="images/hero-480.webp 480w, images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1600.webp 1600w" sizes="100vw">
+      <img class="hero-img" src="images/hero-800.webp" srcset="images/hero-480.webp 480w, images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1600.webp 1600w" sizes="100vw" width="1600" height="2133" alt="Market trader in a woven hat seated at her stall with fresh tomatoes, okra, smoked fish, and household goods in Ghana" fetchpriority="high">
+    </picture>
     <div class="wrap">
       <div>
         <h1 id="hero-title">Your daily sales, recorded on WhatsApp. Your financial profile, built for you.</h1>
