@@ -46,7 +46,7 @@ input:focus,textarea:focus{border-color:var(--green);outline:3px solid var(--gol
 .email a{word-break:break-all}
 
 /* Floating button */
-.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:80px;width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,0,0,.25);z-index:60;transition:transform .15s}
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right));bottom:calc(80px + env(safe-area-inset-bottom));width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,0,0,.25);z-index:60;transition:transform .15s}
 .wa-float:hover{transform:scale(1.06)}
 
 @media (min-width:640px){.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(2,1fr)}form .btn{width:auto}}
