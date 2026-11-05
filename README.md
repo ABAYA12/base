@@ -19,7 +19,7 @@ Static marketing and contact website for **TradeBase** — WhatsApp-based sales 
 ## Configuration
 
 ### Changing the WhatsApp Number
-Find and replace `233XXXXXXXXX` with your full international phone number (country code + number, digits only, no `+` or spaces) in:
+Find and replace `233247988191` (local: `0247988191`) with your full international phone number (country code + number, digits only, no `+` or spaces) in:
 1. `index.html` (header button, hero button, floating button)
 2. `contact.html` (header button, contact card button, floating button)
 3. `script.js` (`WA` fallback URL variable)

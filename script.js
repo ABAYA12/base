@@ -9,7 +9,7 @@
   var status = document.getElementById("form-status");
   var btn = form.querySelector('button[type="submit"]');
   var label = btn.textContent;
-  var WA = "https://wa.me/233XXXXXXXXX?text=Hello%20TradeBase%2C%20I%27d%20like%20to%20know%20more";
+  var WA = "https://wa.me/233247988191?text=Hello%20TradeBase%2C%20I%27d%20like%20to%20know%20more";
 
   function show(type, html) {
     status.className = "status " + type;
