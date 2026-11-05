@@ -1,8 +1,0 @@
-{
-  "name": "tradebase",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "mkdir -p dist && cp -r index.html contact.html style.css script.js favicon.ico robots.txt sitemap.xml dist/"
-  }
-}

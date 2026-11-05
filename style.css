@@ -1,13 +1,12 @@
-/* TradeBase - non-critical styles (critical styles are inlined in index.html) */
+/* Shared layout and component styles */
 .section{padding:var(--pad-section) 0}
 .section-alt{background:var(--white)}
 .section h2{font-size:1.75rem;color:var(--green-dark)}
-.lead{color:var(--muted);margin:0 0 24px}
 .narrow{max-width:760px}
 .grid{display:grid;gap:var(--gap);list-style:none;padding:0;margin:24px 0 0}
 .card{background:var(--white);border-radius:var(--radius-card);box-shadow:var(--shadow);padding:22px}
 .section-alt .card{background:var(--bg)}
-.card h3{font-size:1.15rem;color:var(--ink)}
+.section .card h2,.card h3{font-size:1.15rem;color:var(--ink)}
 .card p{margin:0;color:var(--muted)}
 .num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:800;font-size:1.2rem;margin-bottom:12px}
 .icon{width:44px;height:44px;padding:9px;border-radius:12px;background:var(--green-light);fill:none;stroke:var(--green);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
@@ -40,4 +39,3 @@ form .btn:disabled{opacity:.7;cursor:wait;transform:none}
 #contact-section{padding-bottom:calc(var(--pad-section) + 40px)}
 @media (min-width:640px){.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(2,1fr)}form .btn{width:auto}}
 @media (min-width:768px){.section h2{font-size:2.1rem}.contact-grid{grid-template-columns:1.6fr 1fr;align-items:start}.grid-4{grid-template-columns:repeat(4,1fr)}}
-@media (max-width:380px){.btn-sm{padding:8px 10px;font-size:.9rem}}

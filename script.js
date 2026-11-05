@@ -1,12 +1,9 @@
-/*
-  TOKENS USED IN THIS FILE:
-  233241892746 - WhatsApp fallback link in the form error message
-  (The Formspree endpoint is NOT repeated here; it is read from form.action in index.html.)
-*/
 (function () {
+  // Update footer year
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 
+  // Handle contact form submission
   var form = document.getElementById("contact-form");
   if (!form || !window.fetch) return;
   var status = document.getElementById("form-status");
@@ -26,15 +23,13 @@
     status.className = "status";
     status.textContent = "";
 
-    // Endpoint comes from the form's action attribute in index.html.
-    // Keep the configured endpoint in the form action only.
     fetch(form.action, {
       method: "POST",
       body: new FormData(form),
       headers: { Accept: "application/json" }
     })
       .then(function (res) {
-        if (!res.ok) throw new Error("Bad response");
+        if (!res.ok) throw new Error("Request failed");
         show("ok", "Thank you, we've received your message and will reply shortly.");
         form.reset();
       })
